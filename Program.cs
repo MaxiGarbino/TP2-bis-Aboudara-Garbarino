@@ -31,5 +31,6 @@ void cargarDatosBoxeador1()
     string nombre = Funciones.IngresarTexto("Ingrese el nombre");
     string pais = Funciones.IngresarTexto("Ingrese el pais");
     int peso = Funciones.IngresarEntero("Igrese el peso");
+    int potenciaGolpes = Funciones.IngresarEntero("Igrese la potencia de los golpes");
 }
 
