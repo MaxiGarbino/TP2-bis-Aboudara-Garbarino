@@ -42,4 +42,10 @@ public static class Funciones
         }
         return fechaDate;
     }
+    public static int ObtenerRandom(int min, int max){
+        int random;
+        Random rnd = new Random();
+        random = rnd.Next(min, max + 1);
+        return random;
+    }
 }

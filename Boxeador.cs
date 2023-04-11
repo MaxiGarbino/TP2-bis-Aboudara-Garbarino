@@ -18,16 +18,15 @@ public Boxeador()
         Pais = pais;
         Peso=peso;
         PotenciaGolpes = pg;
-        VelocidadPiernas = 0;
+        VelocidadPiernas = vp;
     }
 
     // Métodos
 
-    public int MiEdad()
+    public double ObtenerSkill()
     {
-        DateTime FechaNacimientoHoy = new DateTime(DateTime.Today.Year, FechaNacimiento.Month, FechaNacimiento.Day);
-        if (FechaNacimientoHoy< DateTime.Today)  Edad = DateTime.Today.Year - FechaNacimiento.Year;
-            else   Edad = DateTime.Today.Year - FechaNacimiento.Year -1;
-        return Edad; 
+        double skill = 0;
+        skill = PotenciaGolpes * 0.6 + VelocidadPiernas * 0.8 + Funciones.ObtenerRandom(1,10);  
+        return skill;
     }
 }
