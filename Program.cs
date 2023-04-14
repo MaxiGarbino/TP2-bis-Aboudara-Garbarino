@@ -1,12 +1,13 @@
 ﻿int opcion = Funciones.IngresarEnteroEnRango("ingrese la opcion (1, 2, 3 o 4)",1,4);
-Boxeador boxeador1 = new Boxeador();
+Boxeador boxeador1;
+Boxeador boxeador2;
 switch (opcion)
 {
     case 1:
-    cargarDatosBoxeador1();
+    cargarDatosBoxeador(ref boxeador1);
     break;
     case 2:
-    cargarDatosBoxeador2();
+    cargarDatosBoxeador(ref boxeador2);
     break;
     case 3:
     pelear();
@@ -17,9 +18,8 @@ switch (opcion)
     break;
 }
 
-void cargarDatosBoxeador1()
+void cargarDatosBoxeador(ref Boxeador boxeador)
 {
-    Console.WriteLine("BOXEADOR 1");
     /*
     Nombre = nom;
         Pais = pais;
@@ -31,6 +31,8 @@ void cargarDatosBoxeador1()
     string nombre = Funciones.IngresarTexto("Ingrese el nombre");
     string pais = Funciones.IngresarTexto("Ingrese el pais");
     int peso = Funciones.IngresarEntero("Igrese el peso");
-    int potenciaGolpes = Funciones.IngresarEntero("Igrese la potencia de los golpes");
+    int potenciaGolpes = Funciones.IngresarEntero("Ingrese la potencia de los golpes");
+    int velocidadPiernas = Funciones.IngresarEntero("Ingrese la velocidad de las piernas")
+    boxeador = new Boxeador(nombre, pais, peso, potenciaGolpes, velocidadPiernas);
 }
 
