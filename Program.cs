@@ -4,13 +4,13 @@ Boxeador boxeador2;
 switch (opcion)
 {
     case 1:
-    cargarDatosBoxeador(ref boxeador1);
+    boxeador1 = cargarDatosBoxeador();
     break;
     case 2:
-    cargarDatosBoxeador(ref boxeador2);
+    boxeador2 = cargarDatosBoxeador();
     break;
     case 3:
-    pelear();
+    //pelear();
     break;
     case 4:
     break;
@@ -18,21 +18,15 @@ switch (opcion)
     break;
 }
 
-void cargarDatosBoxeador(ref Boxeador boxeador)
+Boxeador cargarDatosBoxeador()
 {
-    /*
-    Nombre = nom;
-        Pais = pais;
-        Peso=peso;
-        PotenciaGolpes = pg;
-        VelocidadPiernas = vp;
-    }
-    */
+    Boxeador boxeador;
     string nombre = Funciones.IngresarTexto("Ingrese el nombre");
     string pais = Funciones.IngresarTexto("Ingrese el pais");
     int peso = Funciones.IngresarEntero("Igrese el peso");
     int potenciaGolpes = Funciones.IngresarEntero("Ingrese la potencia de los golpes");
-    int velocidadPiernas = Funciones.IngresarEntero("Ingrese la velocidad de las piernas")
+    int velocidadPiernas = Funciones.IngresarEntero("Ingrese la velocidad de las piernas");
     boxeador = new Boxeador(nombre, pais, peso, potenciaGolpes, velocidadPiernas);
+    return boxeador;
 }
 
