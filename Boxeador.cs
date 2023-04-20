@@ -8,10 +8,6 @@ class Boxeador
     public int PotenciaGolpes{get;set;}
     private int VelocidadPiernas{get;set;}
 // Constructor
-public Boxeador()
-{
-
-}
     public Boxeador(string nom = "", string pais="", int peso=0, int pg = 0, int vp = 0)
     {
         Nombre = nom;
