@@ -48,4 +48,6 @@ public static class Funciones
         random = rnd.Next(min, max + 1);
         return random;
     }
+
+    
 }
