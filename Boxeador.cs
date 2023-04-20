@@ -1,4 +1,4 @@
-sing System;
+using System;
 class Boxeador
 {
     // Definicion de Propiedades

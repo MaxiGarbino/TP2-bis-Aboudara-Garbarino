@@ -18,7 +18,7 @@ do
     box2 = true;
     break;
     case 3:
-    if(box1||box2) pelear();
+    if(box1 && box2) pelear();
     else Console.WriteLine("No se ingreso alguno de los boxeadores");
     break;
     case 4:
