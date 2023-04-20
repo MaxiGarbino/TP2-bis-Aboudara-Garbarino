@@ -35,6 +35,7 @@ string pais = Funciones.IngresarTexto("Ingrese el pais ");
 int peso = Funciones.IngresarEntero("Igrese el peso ");
 int potenciaGolpes = Funciones.IngresarEntero("Ingrese la potencia de los golpes ");
 int velocidadPiernas = Funciones.IngresarEntero("Ingrese la velocidad de las piernas ");
+int Inteligencia = Funciones.IngresarEntero("Ingrese la Inteligencia ");
 boxeador = new Boxeador(nombre, pais, peso, potenciaGolpes, velocidadPiernas);
 return boxeador;
 }
